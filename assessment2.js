@@ -13,7 +13,7 @@ function removeAllChildren(element){
     // 子要素がある限り削除
     element.removeChild(element.firstChild);
   }
-}
+};
 
 assessmentButton.onClick = () => {
   const userName = userNameInnput.value;
@@ -21,6 +21,7 @@ assessmentButton.onClick = () => {
     //名前が空のときは処理を終了する
     return;
   }
+};
 
 userNameInput.onkeydown = event => {
   if(event.key === 'Enter'){
@@ -98,4 +99,5 @@ function assessment(userName) {
  
  result = result.replace(/\{userName}\}/g, userName);
  return result;
+};
  
